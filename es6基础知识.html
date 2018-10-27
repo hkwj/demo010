@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+
+
+<script>
+
+// es6
+
+
+// let 不存在变量提升
+
+
+// console.log(nameLet);  //error 
+// let nameLet = 'ABC';
+
+// console.log(nameVar);  // undefined
+// var nameVar = 'ABC';
+
+// for(let i=0; i<3; i++){
+// 	setTimeout(function(){
+// 		console.log(i);
+// 	})
+// }
+// 0 1 2
+// for 循环里面的作用域
+// for(){} 是怎么限定在这里的
+// 为什么let 是 for 里面的？？？
+// console.log(i); // error
+
+
+
+// 解构赋值
+// let arr = [1,2,3];
+// [a,b,c] = arr;
+// console.log({"a":a,"b":b,"c":c});
+//a: 1, b: 2, c: 3}
+
+
+
+
+// 模板字符串
+let name = "AAA";
+let age = 22;
+let result = "My name is ${name}, I am ${age} years old";
+result = result.replace(/\$\{([^}]*)\}/g,function(){
+	return eval(arguments[1])
+})
+
+console.log(result);
+
+
+</script>
+</body>
+</html>
